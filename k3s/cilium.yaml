@@ -114,9 +114,9 @@ data:
   #   - geneve
   tunnel: vxlan
   enable-vtep: "true"
-  vtep-endpoint: "VTEP-ENDPOINT"
-  vtep-cidr: "VTEP-CIDR"
-  vtep-mac: "VTEP-MAC"
+  vtep-endpoint: "10.169.72.236"
+  vtep-cidr: "10.1.6.0/24"
+  vtep-mac: "82:36:4c:98:2e:56"
   # Enables L7 proxy for L7 policy enforcement and visibility
   enable-l7-proxy: "false"
 

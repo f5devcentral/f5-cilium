@@ -77,13 +77,13 @@ done
 #STEP 2 - deploy cilium
 
 # set cilium device and K3S API server IP
-sed "s/devices: .*/devices: \"$interface\"/; s/K3S-HOST/$nodeip/g;" cilium-bigip.yaml > cilium-bigip-$nodeip.yaml
+sed "s/devices: .*/devices: \"$interface\"/; s/K3S-HOST/$nodeip/g;" cilium.yaml > cilium-$nodeip.yaml
 
 echo "===================================="
 echo -e "${RED}STEP 2 - deploy cilium${NC}"
 echo "===================================="
 
-kubectl apply -f cilium-bigip-$nodeip.yaml
+kubectl apply -f cilium-$nodeip.yaml
 
 ok=0
 
